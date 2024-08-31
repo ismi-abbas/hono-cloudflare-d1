@@ -8,7 +8,14 @@ export interface Env {
 const app = new Hono<{ Bindings: Env }>();
 
 app.get("/", (c) => {
-  return c.text("Hello Hono!");
+  const text = `
+  HELLO FROM HONO 🤗
+  ROUTES
+  GET /posts - get all posts
+  POST /post body: { content: string, userId: number } - create post
+  POST /user body: { name: string, email: string } - create user
+  `
+  return c.text(text);
 });
 
 app.get("/posts", async (c) => {
