@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1725063651776,
+      "tag": "20240831002051_reflective_ulik",
+      "breakpoints": true
+    }
+  ]
+}
